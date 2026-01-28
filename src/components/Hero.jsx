@@ -1,8 +1,8 @@
-import profileImg from "../assets/atmin/sagiri.jpg";
+import profileImg from "../assets/atmin/ongganteng.jpg";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[#E0F2FE] min-h-[80vh] flex items-center">
+    <section className="w-full bg-[#E0F2FE] min-h-[80vh] flex items-center" id="Home">
       <div className="container mx-auto px-8 md:px-40 flex flex-col md:flex-row justify-between items-center gap-12">
         
         {/* Sisi Kiri: Teks */}
