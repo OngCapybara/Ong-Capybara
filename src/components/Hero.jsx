@@ -1,4 +1,4 @@
-import profileImg from "../assets/atmin/ongganteng.jpg";
+import profileImg from "../assets/atmin/ongganteng.JPG";
 
 export default function Hero() {
   return (
