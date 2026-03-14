@@ -7,7 +7,6 @@ import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// REVISI: Wajib import CSS untuk effect coverflow
 import "swiper/css/effect-coverflow";
 
 // Import Aset Gambar Project
@@ -16,6 +15,17 @@ import kostLife from "../assets/projects/kost-life.png";
 import empireGYM from "../assets/projects/empire-gym.png";
 import webLope from "../assets/projects/3d-tracking.png";
 import ageCalculator from "../assets/projects/age_calculate.png";
+import talkzone from "../assets/projects/Talkzone.png"
+import displayersong from "../assets/projects/displayer_song.png"
+import basefamily from "../assets/projects/base_family.png"
+import birtdaycard from "../assets/projects/birthday_card.png"
+import facehanddetector from "../assets/projects/Face_and_hand_detector.png"
+import logicalgate from "../assets/projects/logical_gate_calculator.png"
+import portscanner from "../assets/projects/Port_scanner.png"
+import sleepdetector from "../assets/projects/sleep_detector.png"
+import uiiai from "../assets/projects/Uiiai_robo.png"
+import utsdw from "../assets/projects/uts-dw.png"
+import trashrobo from "../assets/projects/Trash-Robo.jpg"
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -24,37 +34,114 @@ export default function Projects() {
     {
       id: 1,
       title: "Ong Anime list",
-      description: "Sebuah website anime list yang saya buat sendiri menggunakan React.js, Golang dan MySQL.",
+      description: "Sebuah website anime list yang saya kembangkan sendiri menggunakan Reactjs, Golang, dan MySQL.",
       repoLink: "https://github.com/OngCapybara",
       img: ongAnimeList,
     },
     {
       id: 2,
       title: "Kost Life",
-      description: "Aplikasi manajemen kost menggunakan React dan Firebase.",
+      description: "Aplikasi manajemen keuangan anak kost menggunakan ReactJs dan Firebase.",
       repoLink: "https://github.com/OngCapybara",
       img: kostLife,
     },
     {
       id: 3,
       title: "Empire Gym",
-      description: "Company profile untuk sebuah GYM",
+      description: "Company profile untuk sebuah GYM dibandar lampung",
       repoLink: "https://github.com/OngCapybara",
       img: empireGYM,
     },
     {
       id: 4,
       title: "3D Tracking",
-      description: "Company profile untuk sebuah GYM",
+      description: "Aplikasi web menggunakan teknoklogi Js dan AI tracking yang memungkinkan user untuk mengganti tampilan menggunakan gestur tangan.",
       repoLink: "https://github.com/OngCapybara",
       img: webLope,
     },
     {
       id: 5,
       title: "Age Calculator",
-      description: "Company profile untuk sebuah GYM",
+      description: "Aplikasi python yang dapat menghitung umur dan berapa lama kehidupan yang sudah dilalui.",
       repoLink: "https://github.com/OngCapybara",
       img: ageCalculator,
+    },
+    {
+      id: 6,
+      title: "Talkzone",
+      description: "Aplikasi chatting mobile yang menggunakan teknologi Flutter dan Firebase",
+      repoLink: "https://github.com/OngCapybara",
+      img: talkzone,
+    },
+    {
+      id: 7,
+      title: "Displayer Song",
+      description: "Program python yang dapat memunculkan lirik lagu sesuai keinginan.",
+      repoLink: "https://github.com/OngCapybara",
+      img: displayersong,
+    },
+    {
+      id: 8,
+      title: "Base Family",
+      description: "Program semua jenis base untuk enkripsi dan dekripsi teks.",
+      repoLink: "https://github.com/OngCapybara",
+      img: basefamily,
+    },
+    {
+      id: 9,
+      title: "Birthday Card",
+      description: "Kartu ucapan selamat ulang tahun.",
+      repoLink: "https://github.com/OngCapybara",
+      img: birtdaycard,
+    },
+    {
+      id: 10,
+      title: "Face and Hand Detector",
+      description: "Program python untuk tracking wajah dan tangan",
+      repoLink: "https://github.com/OngCapybara",
+      img: facehanddetector,
+    },
+    {
+      id: 11,
+      title: "BLogical Gate Calculator",
+      description: "Aplikasi web yang digunakan untuk melihat output dari gerbang logika",
+      repoLink: "https://github.com/OngCapybara",
+      img: logicalgate,
+    },
+    {
+      id: 12,
+      title: "Port Scanner",
+      description: "Program python yang mirip Nmap. Berfungsi untuk mencari port terbuka dari sebuah web.",
+      repoLink: "https://github.com/OngCapybara",
+      img: portscanner,
+    },
+    {
+      id: 13,
+      title: "Sleep Detector",
+      description: "Program python tracking mata ketika user terdeteksi sedang tidur.",
+      repoLink: "https://github.com/OngCapybara",
+      img: sleepdetector,
+    },
+    {
+      id: 14,
+      title: "Uiiai Robo",
+      description: "Robot arduino yang memanfaatkan sensor ultrasonik.",
+      repoLink: "https://github.com/OngCapybara",
+      img: uiiai,
+    },
+    {
+      id: 15,
+      title: "Mid Exam Web Design",
+      description: "UTS matkul desain web.",
+      repoLink: "https://github.com/OngCapybara",
+      img: utsdw,
+    },
+    {
+      id: 16,
+      title: "Trash Robo",
+      description: "Robot arduino yang memanfaatkan sensor ultrasonik dan akuator sederhana.",
+      repoLink: "https://github.com/OngCapybara",
+      img: trashrobo,
     },
   ];
 

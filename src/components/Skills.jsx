@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// Import Ikon (Sesuaikan path dengan folder kamu)
+// programming language
 import reactLogo from "../assets/progLang/react.svg";
 import golangLogo from "../assets/progLang/golang.svg";
 import htmlLogo from "../assets/progLang/html.svg";
@@ -10,6 +10,14 @@ import mysqlLogo from "../assets/progLang/mysql.svg";
 import phpLogo from "../assets/progLang/php.svg";
 import tailwindLogo from "../assets/progLang/tailwind.svg";
 import flutterLogo from "../assets/progLang/flutter.svg";
+
+// robotics skills
+import arduino from "../assets/robotics/arduino.jpg";
+import esp from "../assets/robotics/esp.png";
+import flightcontroller from "../assets/robotics/orange-cube.jpg";
+import minipc from "../assets/robotics/jetson.png";
+import missionplanner from "../assets/robotics/mission-planner.png";
+import dronekit from "../assets/robotics/dronekit.png";
 
 
 export default function Skills() {
@@ -38,9 +46,11 @@ export default function Skills() {
     ],
     "Robotics": [
       { name: "VTOL Drone", img: "" },
-      { name: "Ardupilot", img: "" },
-      { name: "Mission Scripting", img: "" },
-      { name: "Embedded Systems", img: "" },
+      { name: "Mission Planner", img: missionplanner },
+      { name: "Mission Scripting", img: dronekit },
+      { name: "Arduino", img: arduino },
+      { name: "Esp", img: esp },
+      { name: "Mini PC", img: minipc },
     ]
   };
 
