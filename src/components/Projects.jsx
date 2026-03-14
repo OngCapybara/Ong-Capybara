@@ -36,6 +36,7 @@ export default function Projects() {
       title: "Ong Anime list",
       description: "Sebuah website anime list yang saya kembangkan sendiri menggunakan Reactjs, Golang, dan MySQL.",
       repoLink: "https://github.com/OngCapybara",
+      projectLink: "https://ong-anime-list.vercel.app/",
       img: ongAnimeList,
     },
     {
@@ -232,7 +233,7 @@ export default function Projects() {
                 {selectedProject.description}
               </p>
               <p className="text-slate-700">
-                Klik gambar untuk mengunjungi dan{" "}
+                Jika berminat untuk melihat repository saya, silahkan{" "}
                 <a 
                    href={selectedProject.repoLink} 
                    target="_blank" 
@@ -240,7 +241,7 @@ export default function Projects() {
                    className="text-sky-500 font-bold hover:underline"
                 >
                   klik disini
-                </a> untuk melihat repository.
+                </a>
               </p>
               <p className="mt-6 text-slate-800 font-bold italic">Have a nice day :D</p>
             </div>
