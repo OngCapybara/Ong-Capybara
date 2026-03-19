@@ -19,12 +19,16 @@ export default function Hero() {
           </p>
           
           <div className="flex gap-4 justify-center md:justify-start">
-            <button className="bg-sky-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-sky-200 hover:bg-sky-600 transition">
-              Download CV
-            </button>
-            <button className="border-2 border-sky-400 text-sky-500 px-8 py-3 rounded-xl font-bold hover:bg-sky-50 transition">
-              See My Projects
-            </button>
+            <a href="">
+              <button className="bg-sky-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-sky-200 hover:bg-sky-600 transition">
+                Download CV
+              </button>
+            </a>
+            <a href="#Project">
+              <button className="border-2 border-sky-400 text-sky-500 px-8 py-3 rounded-xl font-bold hover:bg-sky-50 transition">
+                See My Projects
+              </button>
+            </a>
           </div>
         </div>
 

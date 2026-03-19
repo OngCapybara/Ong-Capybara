@@ -178,11 +178,11 @@ export default function Projects() {
             className="pb-20"
           >
             {projects.map((proj) => (
-              <SwiperSlide key={proj.id} className="max-w-[300px] md:max-w-[600px]">
+              <SwiperSlide key={proj.id} className="max-w-[280px] md:max-w-[500px]">
                 {({ isActive }) => (
                   <div 
                     onClick={() => setSelectedProject(proj)}
-                    className={`w-full aspect-video rounded-[2.5rem] cursor-pointer shadow-2xl overflow-hidden transition-all duration-500 ${
+                    className={`w-full aspect-[4/3] rounded-[2.5rem] cursor-pointer shadow-2xl overflow-hidden transition-all duration-500 ${
                       isActive ? "scale-100 opacity-100" : "scale-75 opacity-40 blur-[2px]"
                     }`}
                   >
