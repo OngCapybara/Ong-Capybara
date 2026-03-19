@@ -29,14 +29,13 @@ export default function Skills() {
   const skillData = {
     "Software dev": [
       { name: "React Js", img: reactLogo },
-      { name: "Golang", img: golangLogo }, // Tinggal import & masukin variabelnya di sini
+      { name: "Golang", img: golangLogo },
       { name: "HTML", img: htmlLogo },
       { name: "CSS", img: cssLogo },
       { name: "Tailwind", img: tailwindLogo },
       { name: "Java Script", img: jsLogo },
       { name: "Flutter", img: flutterLogo },
       { name: "MySQL", img: mysqlLogo },
-      { name: "PHP", img: phpLogo },
     ],
     "Cyber Security": [
       { name: "Web Exploitation", img: "" },
