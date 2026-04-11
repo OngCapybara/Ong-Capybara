@@ -10,7 +10,7 @@ export default function Blogs() {
     { id: 2, title: "Web Security 101", date: "Jan 25, 2026", category: "Cyber" },
     { id: 3, title: "Merakit VTOL Drone", date: "Jan 20, 2026", category: "Robotics" },
     { id: 4, title: "React State Management", date: "Jan 15, 2026", category: "Frontend" },
-    { id: 5, title: "Bug Bounty Journey", date: "Jan 10, 2026", category: "Cyber" },
+    { id: 5, title: "Bug Bounty Journey", date: "Jan 15, 2026", category: "Cyber" },
     { id: 6, title: "Database MySQL Optimization", date: "Jan 05, 2026", category: "Backend" },
     { id: 7, title: "Ardupilot Configuration", date: "Jan 02, 2026", category: "Robotics" },
     { id: 8, title: "Tailwind vs Bootstrap", date: "Dec 28, 2025", category: "Frontend" },
