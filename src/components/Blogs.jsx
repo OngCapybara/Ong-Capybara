@@ -1,88 +1,102 @@
-import { useState } from "react";
-
 export default function Blogs() {
-  // 1. Setup State untuk Halaman Aktif
-  const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6; // Mau nampilin berapa blog per halaman? Kita set 6 ya.
-
-  const blogs = [
-    { id: 1, title: "Tips Belajar Golang", date: "Jan 28, 2026", category: "Backend" },
-    { id: 2, title: "Web Security 101", date: "Jan 25, 2026", category: "Cyber" },
-    { id: 3, title: "Merakit VTOL Drone", date: "Jan 20, 2026", category: "Robotics" },
-    { id: 4, title: "React State Management", date: "Jan 15, 2026", category: "Frontend" },
-    { id: 5, title: "Bug Bounty Journey", date: "Jan 15, 2026", category: "Cyber" },
-    { id: 6, title: "Database MySQL Optimization", date: "Jan 05, 2026", category: "Backend" },
-    { id: 7, title: "Ardupilot Configuration", date: "Jan 02, 2026", category: "Robotics" },
-    { id: 8, title: "Tailwind vs Bootstrap", date: "Dec 28, 2025", category: "Frontend" },
-    { id: 9, title: "Networking Dasar", date: "Dec 20, 2025", category: "Network" },
-    { id: 10, title: "Pentesting Mobile App", date: "Dec 15, 2025", category: "Cyber" },
+  // Data artikel blog diatur dalam array agar rapi
+  const articles = [
+    {
+      id: 1,
+      category: "Web Dev",
+      date: "Mar 8, 2026",
+      title: "Why I Ditched Heavy Frameworks for Go & React Stack",
+      description: "Pengalaman saya membangun arsitektur aplikasi yang cepat, efisien, dan bersih menggunakan kombinasi Golang dan ReactJS.",
+      img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80",
+      link: "#" // Bisa diisi dengan link artikel asli jika ada, atau biarkan '#'
+    },
+    {
+      id: 2,
+      category: "Robotics",
+      date: "Feb 21, 2026",
+      title: "Building an Autonomous Embedded System with ESP32",
+      description: "Langkah dasar mengintegrasikan sensor ultrasonik dan aktuator servo untuk menciptakan purwarupa robotika sederhana.",
+      img: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=700&q=80",
+      link: "#"
+    },
+    {
+      id: 3,
+      category: "Life Style",
+      date: "Jan 14, 2026",
+      title: "Managing Student Finances: From Sheets to Building Kost-Life",
+      description: "Kisah di balik pembuatan aplikasi finansial anak kost dan bagaimana mengelola data kuantitatif dalam riset perangkat lunak.",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&q=80",
+      link: "#"
+    }
   ];
 
-  // 2. Logika Pemotongan Data (Pagination)
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentBlogs = blogs.slice(indexOfFirstPost, indexOfLastPost);
-
-  // 3. Hitung Total Halaman
-  const totalPages = Math.ceil(blogs.length / postsPerPage);
-
   return (
-    <section id="Blog" className="w-full bg-white py-20">
-      <div className="container mx-auto px-8 md:px-40 text-center">
-        <h2 className="text-4xl font-black text-slate-900 mb-16 uppercase">Blogs</h2>
+    <section id="blog" className="py-24 bg-zinc-50 dark:bg-zinc-900/40">
+      <div className="max-w-6xl mx-auto px-6">
+        
+        {/* Header Section */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
+          <div>
+            <p className="text-xs font-medium text-sky-500 tracking-widest uppercase mb-3">Thoughts</p>
+            <h2 className="font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">From the blog</h2>
+          </div>
+          <a 
+            href="#blog" 
+            className="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-sky-500 transition-colors self-start sm:self-auto nl"
+          >
+            All articles →
+          </a>
+        </div>
 
-        {/* Blog Grid - Menampilkan hanya data yang sudah di-slice */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
-          {currentBlogs.map((blog) => (
-            <div key={blog.id} className="group cursor-pointer">
-              <div className="w-full aspect-square bg-slate-200 rounded-[2rem] mb-6 overflow-hidden transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-sky-100 group-hover:-translate-y-2">
-                <div className="w-full h-full bg-slate-300 flex items-center justify-center text-slate-400 font-bold uppercase text-xs">
-                  Cover Image
+        {/* Grid Articles */}
+        <div className="grid md:grid-cols-3 gap-6">
+          {articles.map((art) => (
+            <article 
+              key={art.id} 
+              className="card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-sky-500 transition-all duration-300"
+            >
+              {/* Image Container */}
+              <div className="pf w-full h-44 overflow-hidden bg-zinc-200">
+                <img 
+                  src={art.img} 
+                  alt={art.title} 
+                  loading="lazy" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              {/* Content Box */}
+              <div className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xs bg-sky-50 dark:bg-zinc-800 text-sky-500 border border-sky-200 dark:border-zinc-700 px-2.5 py-1 rounded-full font-medium">
+                    {art.category}
+                  </span>
+                  <span className="text-xs text-zinc-400">
+                    {art.date}
+                  </span>
                 </div>
+
+                <a href={art.link}>
+                  <h3 className="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-sky-500 transition-colors duration-200 leading-snug">
+                    {art.title}
+                  </h3>
+                </a>
+
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4 line-clamp-3">
+                  {art.description}
+                </p>
+
+                <a 
+                  href={art.link} 
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl"
+                >
+                  Read more →
+                </a>
               </div>
-              <div className="text-left px-2">
-                <span className="text-sky-500 font-bold text-sm uppercase">{blog.category}</span>
-                <h3 className="text-xl font-black text-slate-800 mt-1 group-hover:text-sky-600 transition">{blog.title}</h3>
-                <p className="text-slate-400 text-sm mt-2">{blog.date}</p>
-              </div>
-            </div>
+            </article>
           ))}
         </div>
 
-        {/* 4. Tampilan Tombol Angka (Pagination) */}
-        <div className="flex justify-center items-center gap-3">
-          {/* Tombol Sebelumnya (Opsional) */}
-          {currentPage > 1 && (
-            <button 
-              onClick={() => setCurrentPage(currentPage - 1)}
-              className="w-10 h-10 rounded-xl bg-slate-200 text-slate-600 font-bold hover:bg-sky-500 hover:text-white transition"
-            >
-              {"<"}
-            </button>
-          )}
-
-          {/* Mapping Angka Halaman */}
-          {[...Array(totalPages)].map((_, index) => (
-            <button
-              key={index + 1}
-              onClick={() => setCurrentPage(index + 1)}
-              className={`w-10 h-10 rounded-xl font-bold transition shadow-sm ${
-                currentPage === index + 1 
-                ? "bg-sky-500 text-white" 
-                : "bg-slate-200 text-slate-600 hover:bg-slate-300"
-              }`}
-            >
-              {index + 1}
-            </button>
-          ))}
-
-          {/* Simbol Titik-titik (Kalau halaman sudah sangat banyak) */}
-          {totalPages > 3 && currentPage < totalPages && (
-            <button className="w-10 h-10 rounded-xl bg-slate-100 text-slate-400 font-bold cursor-default">
-              ...
-            </button>
-          )}
-        </div>
       </div>
     </section>
   );

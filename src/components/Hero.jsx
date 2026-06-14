@@ -1,47 +1,45 @@
-import profileImg from "../assets/atmin/ongganteng.JPG";
-
 export default function Hero() {
   return (
-    <section className="w-full bg-[#E0F2FE] min-h-[80vh] flex items-center" id="Home">
-      <div className="container mx-auto px-8 md:px-40 flex flex-col md:flex-row justify-between items-center gap-12">
-        
-        {/* Sisi Kiri: Teks */}
-        <div className="max-w-xl order-2 md:order-1 text-center md:text-left">
-          <h3 className="text-2xl font-bold text-slate-800 mb-2">Hello!</h3>
-          <h1 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
-            I'm Ong Azis Saliem
-          </h1>
-          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-            I break code to secure it, and write code to fly it. <br className="hidden md:block" />
-            Specializing in <span className="font-bold text-sky-600">React</span>, 
-            <span className="font-bold text-sky-600"> Golang</span>, and 
-            <span className="font-bold text-sky-600"> VTOL Drones</span>.
-          </p>
-          
-          <div className="flex gap-4 justify-center md:justify-start">
-            <a href="">
-              <button className="bg-sky-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-sky-200 hover:bg-sky-600 transition">
+    <section id="hero" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-white dark:bg-zinc-950">
+      <div className="absolute top-1/4 right-0 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-zinc-200/50 dark:bg-zinc-800/30 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-24 w-full">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-sm font-medium text-sky-500 tracking-widest uppercase mb-4">Available for work</p>
+            <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6">
+              Hi, I'm <span className="text-sky-500">Ong Azis</span>
+            </h1>
+            <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
+              Full-Stack Web Developer &amp; Robotics Enthusiast. I build digital products that are fast, clean, and accessible.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a href="#Project" className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">
+                View my work
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </a>
+              <button onClick={() => window.open('/CV_Ong.pdf', '_blank')} className="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">
                 Download CV
               </button>
-            </a>
-            <a href="#Project">
-              <button className="border-2 border-sky-400 text-sky-500 px-8 py-3 rounded-xl font-bold hover:bg-sky-50 transition">
-                See My Projects
-              </button>
-            </a>
+            </div>
+            <div className="flex gap-8 mt-14 pt-8 border-t border-zinc-100 dark:border-zinc-900">
+              <div><p className="font-display font-bold text-3xl text-zinc-900 dark:text-white">10+</p><p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Projects done</p></div>
+              <div><p className="font-display font-bold text-3xl text-zinc-900 dark:text-white">5+</p><p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Collaborations</p></div>
+            </div>
+          </div>
+
+          <div className="flex justify-center md:justify-end">
+            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <div className="pf w-full h-full rounded-3xl overflow-hidden bg-zinc-200">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Ong Azis" loading="eager" className="w-full h-full object-cover" />
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-sky-500 text-white font-display font-bold text-sm px-4 py-2.5 rounded-2xl shadow-lg">Open to projects</div>
+            </div>
           </div>
         </div>
-
-        <div className="order-1 md:order-2">
-          <div className="w-[300px] h-[350px] md:w-[400px] md:h-[450px] rounded-lg overflow-hidden shadow-lg">
-            <img 
-              src={profileImg} 
-              alt="Ong Azis Saliem" 
-              className="w-full h-full object-cover" 
-            />
-          </div>
-        </div>
-
       </div>
     </section>
   );

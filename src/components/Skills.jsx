@@ -1,115 +1,70 @@
-import { useState } from "react";
-
-// programming language
-import reactLogo from "../assets/progLang/react.svg";
-import golangLogo from "../assets/progLang/golang.svg";
-import htmlLogo from "../assets/progLang/html.svg";
-import cssLogo from "../assets/progLang/css.svg";
-import jsLogo from "../assets/progLang/js.svg";
-import mysqlLogo from "../assets/progLang/mysql.svg";
-import phpLogo from "../assets/progLang/php.svg";
-import tailwindLogo from "../assets/progLang/tailwind.svg";
-import flutterLogo from "../assets/progLang/flutter.svg";
-
-// robotics skills
-import arduino from "../assets/robotics/arduino.jpg";
-import esp from "../assets/robotics/esp.png";
-import flightcontroller from "../assets/robotics/orange-cube.jpg";
-import minipc from "../assets/robotics/jetson.png";
-import missionplanner from "../assets/robotics/mission-planner.png";
-import dronekit from "../assets/robotics/dronekit.png";
-
+import MyGuwe from "../assets/atmin/sagiri.jpg"; // Atau pakai path foto profil aslimu, Ong
 
 export default function Skills() {
-  const [activeTab, setActiveTab] = useState("Software dev");
-
-  const categories = ["Software dev", "Cyber Security", "Robotics"];
-
-  // Data Skill per Kategori
-  const skillData = {
-    "Software dev": [
-      { name: "React Js", img: reactLogo },
-      { name: "Golang", img: golangLogo },
-      { name: "HTML", img: htmlLogo },
-      { name: "CSS", img: cssLogo },
-      { name: "Tailwind", img: tailwindLogo },
-      { name: "Java Script", img: jsLogo },
-      { name: "Flutter", img: flutterLogo },
-      { name: "MySQL", img: mysqlLogo },
-    ],
-    "Cyber Security": [
-      { name: "Web Exploitation", img: "" },
-      { name: "Bug Bounty", img: "" },
-      { name: "Network Security", img: "" },
-      { name: "Reverse Engineering", img: "" },
-    ],
-    "Robotics": [
-      { name: "VTOL Drone", img: "" },
-      { name: "Mission Planner", img: missionplanner },
-      { name: "Mission Scripting", img: dronekit },
-      { name: "Arduino", img: arduino },
-      { name: "Esp", img: esp },
-      { name: "Mini PC", img: minipc },
-    ]
-  };
+  // Daftar teknologi real yang kamu gunakan dalam proyek-proyekmu
+  const techStack = [
+    "ReactJS",
+    "Golang",
+    "MySQL",
+    "Firebase",
+    "Tailwind CSS",
+    "Flutter",
+    "Python",
+    "OpenCV / Mediapipe",
+    "Arduino / ESP32",
+    "SolidWorks"
+  ];
 
   return (
-    <section className="w-full bg-white py-20" id="Skills">
-      {/* Container dengan padding yang konsisten */}
-      <div className="container mx-auto px-8 md:px-40">
-        
-        {/* Title */}
-        <h2 className="text-4xl font-black text-center text-slate-900 mb-12">
-          My Skills
-        </h2>
+    <section id="about" className="py-24 bg-zinc-50 dark:bg-zinc-900/40 text-zinc-900 dark:text-zinc-100">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
 
-        {/* Tab Buttons */}
-        <div className="flex justify-center gap-4 mb-16">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveTab(cat)}
-              className={`px-8 py-3 rounded-xl font-bold border-2 transition-all duration-300 ${
-                activeTab === cat
-                  ? "bg-sky-500 border-sky-500 text-white shadow-lg shadow-sky-200"
-                  : "border-sky-400 text-sky-500 hover:bg-sky-50"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {skillData[activeTab].map((skill) => (
-            <div
-              key={skill.name}
-              className="group flex flex-col items-center justify-center p-8 rounded-2xl border-2 border-sky-100 bg-white hover:border-sky-400 hover:shadow-xl hover:shadow-sky-50 transition-all cursor-pointer aspect-square"
-            >
-              {/* Kontainer Ikon */}
-              <div className="w-full h-full mb-4 bg-slate-50 rounded-lg group-hover:bg-sky-50 transition-colors flex items-center justify-center overflow-hidden p-4">
-                {skill.img ? (
-                  <img 
-                    src={skill.img} 
-                    alt={skill.name} 
-                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" 
-                  />
-                ) : (
-                  // Placeholder jika gambar belum ada
-                  <div className="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-[10px] text-slate-400 font-bold uppercase">
-                    No Icon
-                  </div>
-                )}
-              </div>
-              
-              <span className="font-bold text-sky-600 text-lg text-center">
-                {skill.name}
-              </span>
+          {/* Sisi Kiri: Foto Profil (order-2 di mobile agar teks duluan, md:order-1 di desktop) */}
+          <div className="order-2 md:order-1">
+            <div className="pf w-full aspect-square max-w-sm mx-auto rounded-3xl overflow-hidden bg-zinc-200 shadow-lg">
+              <img 
+                src={MyGuwe} 
+                alt="Ong Azis Saliem" 
+                loading="lazy" 
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
             </div>
-          ))}
-        </div>
+          </div>
 
+          {/* Sisi Kanan: Deskripsi Profil */}
+          <div className="order-1 md:order-2">
+            <p className="text-xs font-medium text-sky-500 tracking-widest uppercase mb-3">About me</p>
+            <h2 className="font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white leading-tight mb-6">
+              A bit about<br />who I am
+            </h2>
+            <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+              Saya **Ong Azis Saliem**, seorang mahasiswa program studi S1 Informatika di Universitas Teknokrat Indonesia. Saya fokus bergerak di ranah rekayasa perangkat lunak (*full-stack web development*) serta pengembangan sistem tertanam (*embedded systems*) dan robotika.
+            </p>
+            <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed mb-8">
+              Saya senang membangun produk digital yang bersih, efisien, dan fungsional—baik berupa sistem manajemen keuangan berbasis web seperti **Kost Life**, implementasi visi komputer AI, hingga merancang purwarupa sistem kontrol perangkat keras berbasis mikrokontroler.
+            </p>
+
+            {/* List Tech Stack */}
+            <div>
+              <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">
+                Stack &amp; tools
+              </p>
+              <div className="flex flex-wrap gap-2" role="list" aria-label="Skills">
+                {techStack.map((tech, index) => (
+                  <span 
+                    key={index}
+                    role="listitem" 
+                    className="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-sky-500 dark:hover:border-sky-500 transition-colors duration-200 cursor-default"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   );
