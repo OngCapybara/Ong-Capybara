@@ -1,4 +1,4 @@
-import MyGuwe from "../assets/atmin/ongsigma.jpg"; // Atau pakai path foto profil aslimu, Ong
+import MyGuwe from "../assets/atmin/ongsigma.JPG"; // Atau pakai path foto profil aslimu, Ong
 
 export default function Skills() {
   // Daftar teknologi real yang kamu gunakan dalam proyek-proyekmu

@@ -28,7 +28,7 @@ export default function Contact() {
         "R6iJ3xJj1S9cpR_6e"     // Public Key kamu
       )
       .then(
-        (result) => {
+        () => {
           // 3. Pop-up Sukses Berhasil Terkirim
           Swal.fire({
             icon: "success",
