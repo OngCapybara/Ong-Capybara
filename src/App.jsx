@@ -30,11 +30,16 @@ export default function App() {
   }, [isDark]); // Berjalan cuma kalau isDark berubah
 
   // 3. Fungsi toggle tema saat diklik
+  // REVISI: Update fungsi ini di dalam file src/App.jsx kamu
   const toggleDarkMode = () => {
     if (isDark) {
+      // 1. Hapus kelas dari tag HTML secara instan
+      document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
       setIsDark(false);
     } else {
+      // 2. Tambah kelas ke tag HTML secara instan
+      document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
       setIsDark(true);
     }
