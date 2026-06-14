@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Blogs() {
   // Data artikel blog diatur dalam array agar rapi
   const articles = [
@@ -41,7 +43,7 @@ export default function Blogs() {
             <h2 className="font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">From the blog</h2>
           </div>
           <a 
-            href="#blog" 
+            href="/blog" 
             className="text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-sky-500 transition-colors self-start sm:self-auto nl"
           >
             All articles →

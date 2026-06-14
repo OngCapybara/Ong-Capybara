@@ -1,4 +1,4 @@
-import MyGuwe from "../assets/atmin/sagiri.jpg"; // Atau pakai path foto profil aslimu, Ong
+import MyGuwe from "../assets/atmin/ongsigma.jpg"; // Atau pakai path foto profil aslimu, Ong
 
 export default function Skills() {
   // Daftar teknologi real yang kamu gunakan dalam proyek-proyekmu
@@ -39,10 +39,10 @@ export default function Skills() {
               A bit about<br />who I am
             </h2>
             <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-              Saya **Ong Azis Saliem**, seorang mahasiswa program studi S1 Informatika di Universitas Teknokrat Indonesia. Saya fokus bergerak di ranah rekayasa perangkat lunak (*full-stack web development*) serta pengembangan sistem tertanam (*embedded systems*) dan robotika.
+              Saya <b>Ong Azis Saliem</b>, seorang mahasiswa program studi S1 Informatika di Universitas Teknokrat Indonesia. Saya fokus bergerak di ranah rekayasa perangkat lunak (<b>full-stack web development</b>) serta pengembangan sistem tertanam (<b>embedded systems</b>) dan robotika.
             </p>
             <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed mb-8">
-              Saya senang membangun produk digital yang bersih, efisien, dan fungsional—baik berupa sistem manajemen keuangan berbasis web seperti **Kost Life**, implementasi visi komputer AI, hingga merancang purwarupa sistem kontrol perangkat keras berbasis mikrokontroler.
+              Saya senang membangun produk digital yang bersih, efisien, dan fungsional—baik berupa sistem manajemen keuangan berbasis web seperti <b>Kost Life</b>, implementasi visi komputer AI, hingga merancang purwarupa sistem kontrol perangkat keras berbasis mikrokontroler.
             </p>
 
             {/* List Tech Stack */}

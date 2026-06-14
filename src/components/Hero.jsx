@@ -1,3 +1,5 @@
+import atmin from "../assets/atmin/ongganteng.JPG";
+
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-white dark:bg-zinc-950">
@@ -9,7 +11,7 @@ export default function Hero() {
           <div>
             <p className="text-sm font-medium text-sky-500 tracking-widest uppercase mb-4">Available for work</p>
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6">
-              Hi, I'm <span className="text-sky-500">Ong Azis</span>
+              Hi, I'm <span className="text-sky-500">Ong Azis Saliem</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
               Full-Stack Web Developer &amp; Robotics Enthusiast. I build digital products that are fast, clean, and accessible.
@@ -34,7 +36,7 @@ export default function Hero() {
           <div className="flex justify-center md:justify-end">
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <div className="pf w-full h-full rounded-3xl overflow-hidden bg-zinc-200">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Ong Azis" loading="eager" className="w-full h-full object-cover" />
+                <img src={atmin} alt="Ong Azis" loading="eager" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -left-4 bg-sky-500 text-white font-display font-bold text-sm px-4 py-2.5 rounded-2xl shadow-lg">Open to projects</div>
             </div>
