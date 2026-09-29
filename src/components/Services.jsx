@@ -20,7 +20,7 @@ export default function Services() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/>
               </svg>
             </div>
-            <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Full-Stack Web Dev</h3>
+            <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Full-Stack Web &amp; Mobile Dev</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
               Building responsive, adaptive, and fast web applications. Seamless integration between database management systems, reliable backend performance, and modern frontend interfaces.
             </p>
@@ -34,7 +34,7 @@ export default function Services() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
               </svg>
             </div>
-            <h3 className="font-display font-bold text-xl text-white mb-3">Robotics &amp; Drone Systems</h3>
+            <h3 className="font-display font-bold text-xl text-white mb-3">Robotics &amp; Embedded Systems</h3>
             <p className="text-sm text-zinc-400 leading-relaxed">
               Development of prototypes for simple mechanical and robotic systems based on microcontrollers. Possesses specialized expertise in assembly, control system configuration, and the operation of unmanned aerial vehicles (UAV).
             </p>

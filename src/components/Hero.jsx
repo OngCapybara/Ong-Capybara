@@ -14,7 +14,7 @@ export default function Hero() {
               Hi, I'm <span className="text-sky-500">Ong Azis Saliem</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
-              Full-Stack Web Developer, Cyber Security Enthusiast &amp; Robotics Enthusiast. I build digital products that are fast, clean, and accessible.
+              I build fast, clean, &amp; accessible digital products as well as hardware-integrated systems.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#Project" className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">
@@ -29,7 +29,7 @@ export default function Hero() {
             </div>
             <div className="flex gap-8 mt-14 pt-8 border-t border-zinc-100 dark:border-zinc-900">
               <div><p className="font-display font-bold text-3xl text-zinc-900 dark:text-white">10+</p><p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Projects done</p></div>
-              <div><p className="font-display font-bold text-3xl text-zinc-900 dark:text-white">5+</p><p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Collaborations</p></div>
+              <div><p className="font-display font-bold text-3xl text-zinc-900 dark:text-white">2+</p><p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Collaborations</p></div>
             </div>
           </div>
 
