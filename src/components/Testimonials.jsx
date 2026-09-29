@@ -3,27 +3,19 @@ export default function Testimonials() {
   const reviews = [
     {
       id: 1,
-      name: "Sarah Müller",
-      role: "CPO, Novu",
-      feedback: '"Ong menyelesaikan pengerjaan web kami dalam waktu singkat dengan kualitas yang luar biasa. Tingkat konversi platform kami naik signifikan sejak perilisan pertama. Sangat direkomendasikan."',
+      name: "M. Reynaldi",
+      role: "Mahasiswa, Teknologi Informasi",
+      feedback: '"Ong membantu saya menyelesaikan tugas akhir kuliah dengan cepat dan baik. Menggunakan teknologi postgreSql dan prisma ORM. Saya dapat nilai A!"',
       img: "https://i.pravatar.cc/80?img=11",
       isHighlighted: false,
     },
     {
       id: 2,
-      name: "Thomas Renault",
-      role: "Founder, Finlo",
-      feedback: '"Bekerja bersama Ong adalah pengalaman yang menyenangkan. Dia memahami kebutuhan sistem dengan cepat, eksekusinya taktis, dan hasil akhirnya melampaui ekspektasi tim kami."',
-      img: "https://i.pravatar.cc/80?img=52",
+      name: "Astika",
+      role: "Mahasiswi, Teknik Komputer",
+      feedback: '"Saya mendapatkan tugas akhir untuk membuat aplikasi mobile. Ong sangat membantu saya yang sedang keteteran. Good Job!"',
+      img: "https://instagram.ftkg4-1.fna.fbcdn.net/v/t51.2885-19/467568400_1309148380453525_3361543318238661249_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDc4LkMzIn0%3D&_nc_ohc=S9nA-aVQ_-kQ7kNvwFogyKB&_nc_oc=AdonAy359xjNI2KAbv4GaD9GhuD9HDQTrPWwyUJisRXw96cnrWonAg4YH7dKIGrtWvQ&_nc_zt=24&_nc_ht=instagram.ftkg4-1.fna&_nc_ss=7baaf&oh=00_AQMUOSmyMxNrU1O0SFdS6R2g2qtwOACU4JuJmg_cVv0EVg&oe=6AC1781C",
       isHighlighted: true, // Kartu kedua dibuat bertema gelap sebagai highlight bawaan template
-    },
-    {
-      id: 3,
-      name: "Camille Dufresne",
-      role: "Creative Director, Orea",
-      feedback: '"Kami memiliki tenggat waktu yang sangat ketat untuk integrasi modul hardware. Ong berhasil merampungkan seluruh fungsionalitas sistem hanya dalam kurun waktu dua minggu. Kode bersih dan andal."',
-      img: "https://i.pravatar.cc/80?img=47",
-      isHighlighted: false,
     },
   ];
 
