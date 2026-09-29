@@ -8,28 +8,28 @@ export default function Projects() {
   const featured = [
     {
       id: 1,
-      title: "Ong Anime list",
-      description: "Sebuah website anime list yang saya kembangkan sendiri menggunakan Reactjs, Golang, dan MySQL. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis, odit nam aperiam fugiat optio libero.\n\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ducimus repudiandae veritatis dicta quo fuga.",
-      tags: ["Full-Stack", "Golang", "MySQL"],
-      projectLink: "https://ong-anime-list.vercel.app/",
-      img: ongAnimeList,
-    },
-    {
-      id: 2,
       title: "Kost Life",
-      description: "Aplikasi manajemen keuangan anak kost menggunakan ReactJs dan Firebase untuk pencatatan pengeluaran harian secara aman.",
-      tags: ["Finance", "ReactJS"],
+      description: "A financial management app for students living in dorms uses ReactJS and Firebase to securely track daily expenses. It uses ReactJS for an attractive, interactive, and modern frontend. Firebase is used as a BaaS platform that is easy to configure, feature-rich, and versatile.",
+      tags: ["Finance", "ReactJS", "Firebase"],
       projectLink: "https://kost-life.vercel.app/",
       img: kostLife,
     },
     {
-      id: 3,
+      id: 2,
       title: "Empire Gym",
-      description: "Company profile landing page komersial untuk pusat kebugaran Empire GYM yang berlokasi di Kota Bandar Lampung.",
-      tags: ["Web Design", "Tailwind"],
+      description: "Commercial landing page for Empire GYM, a fitness center located in Bandar Lampung. As part of a group project, I developed this site with three of my classmates in our Web Design course.",
+      tags: ["Web Design", "HTML", "CSS", "JavaScript"],
       projectLink: "https://empire-gym.vercel.app/",
       img: empireGYM,
-    }
+    },
+    {
+      id: 3,
+      title: "Ong Anime list",
+      description: "An anime list website that I developed myself using ReactJS, Go, and MySQL. I chose this tech stack because I’m already proficient in using these tools. For styling, I used Tailwind CSS. This website lists every anime title I’ve ever watched in my life.",
+      tags: ["Full-Stack", "ReactJS", "Golang", "MySQL"],
+      projectLink: "https://ong-anime-list.vercel.app/",
+      img: ongAnimeList,
+    },
   ];
 
   return (

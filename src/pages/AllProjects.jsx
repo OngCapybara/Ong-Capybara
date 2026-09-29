@@ -36,10 +36,34 @@ export default function AllProjects() {
   ];
 
   const projects = [
-    { id: 1, title: "Ong Anime list", description: "Website anime list menggunakan Reactjs, Golang, dan MySQL.", category: "web", tags: ["Full-Stack", "Golang"], projectLink: "https://ong-anime-list.vercel.app/", img: ongAnimeList },
-    { id: 2, title: "Kost Life", description: "Aplikasi manajemen keuangan anak kost menggunakan ReactJs dan Firebase.", category: "web", tags: ["Finance", "ReactJS"], projectLink: "https://kost-life.vercel.app/", img: kostLife },
-    { id: 3, title: "Empire Gym", description: "Company profile untuk sebuah GYM di Bandar Lampung.", category: "web", tags: ["Web Design", "Tailwind"], projectLink: "https://empire-gym.vercel.app/", img: empireGYM },
-    { id: 4, title: "3D Tracking", description: "Aplikasi web menggunakan teknologi Js dan AI tracking gestur tangan.", category: "ai", tags: ["AI", "Computer Vision"], projectLink: "https://3d-tracking-ong.vercel.app/", img: webLope },
+    {
+      id: 1,
+      title: "Kost Life",
+      description: "A financial management app for students living in dorms uses ReactJS and Firebase to securely track daily expenses. It uses ReactJS for an attractive, interactive, and modern frontend. Firebase is used as a BaaS platform that is easy to configure, feature-rich, and versatile.",
+      category: "web", 
+      tags: ["Finance", "ReactJS", "Firebase"],
+      projectLink: "https://kost-life.vercel.app/",
+      img: kostLife,
+    },
+    {
+      id: 2,
+      title: "Empire Gym",
+      description: "Commercial landing page for Empire GYM, a fitness center located in Bandar Lampung. As part of a group project, I developed this site with three of my classmates in our Web Design course.",
+      category: "web",
+      tags: ["Web Design", "HTML", "CSS", "JavaScript"],
+      projectLink: "https://empire-gym.vercel.app/",
+      img: empireGYM,
+    },
+    {
+      id: 3,
+      title: "Ong Anime list",
+      description: "An anime list website that I developed myself using ReactJS, Go, and MySQL. I chose this tech stack because I’m already proficient in using these tools. For styling, I used Tailwind CSS. This website lists every anime title I’ve ever watched in my life.",
+      category: "web",
+      tags: ["Full-Stack", "ReactJS", "Golang", "MySQL"],
+      projectLink: "https://ong-anime-list.vercel.app/",
+      img: ongAnimeList,
+    },
+    { id: 4, title: "3D Tracking", description: "Aplikasi web menggunakan library Js dan AI tracking yang dapat mengikuti gestur tangan. Untuk template gestur dapat kita setel secara statis sehingga diperlukan untuk membuka source code untuk menambahkannya", category: ['web', "ai"], tags: ["AI", "Computer Vision"], projectLink: "https://3d-tracking-ong.vercel.app/", img: webLope },
     { id: 5, title: "Age Calculator", description: "Aplikasi python yang dapat menghitung umur dan lama kehidupan.", category: "others", tags: ["Python", "CLI"], projectLink: "https://github.com/OngCapybara/Simple-App-To-Calculate-Age", img: ageCalculator },
     { id: 6, title: "Talkzone", description: "Aplikasi chatting mobile yang menggunakan teknologi Flutter dan Firebase.", category: "web", tags: ["Mobile", "Flutter"], projectLink: "https://github.com/OngCapybara/TalkZone", img: talkzone },
     { id: 7, title: "Displayer Song", description: "Program python yang dapat memunculkan lirik lagu sesuai keinginan.", category: "others", tags: ["Python", "Automation"], projectLink: "https://github.com/OngCapybara/App-for-displaying-song-lyrics", img: displayersong },

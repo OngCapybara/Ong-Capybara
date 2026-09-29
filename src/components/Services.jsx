@@ -22,7 +22,7 @@ export default function Services() {
             </div>
             <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Full-Stack Web Dev</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-              Membangun aplikasi web yang responsif, adaptif, dan cepat. Integrasi mulus antara sistem manajemen basis data, performa backend yang andal, serta antarmuka frontend yang modern.
+              Building responsive, adaptive, and fast web applications. Seamless integration between database management systems, reliable backend performance, and modern frontend interfaces.
             </p>
           </article>
 
@@ -34,9 +34,9 @@ export default function Services() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
               </svg>
             </div>
-            <h3 className="font-display font-bold text-xl text-white mb-3">Robotics &amp; IoT Systems</h3>
+            <h3 className="font-display font-bold text-xl text-white mb-3">Robotics &amp; Drone Systems</h3>
             <p className="text-sm text-zinc-400 leading-relaxed">
-              Pengembangan sistem tertanam (*embedded systems*) berbasis mikrokontroler. Berpengalaman dalam perakitan purwarupa robotik, integrasi sensor-aktuator, hingga konfigurasi protokol komunikasi hardware.
+              Development of prototypes for simple mechanical and robotic systems based on microcontrollers. Possesses specialized expertise in assembly, control system configuration, and the operation of unmanned aerial vehicles (UAV).
             </p>
           </article>
 
@@ -51,7 +51,7 @@ export default function Services() {
             </div>
             <h3 className="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">UI/UX &amp; Prototyping</h3>
             <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-              Merancang alur pengguna (*user flow*) yang intuitif dan interaktif di Figma sebelum masuk ke tahap produksi. Memastikan transisi desain mekanis atau digital berpusat pada kemudahan fungsionalitas.
+              Designing intuitive and interactive user flows in Figma before moving on to the production phase. Ensuring that mechanical or digital design transitions prioritize ease of use.
             </p>
           </article>
 

@@ -14,7 +14,7 @@ export default function Hero() {
               Hi, I'm <span className="text-sky-500">Ong Azis Saliem</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
-              Full-Stack Web Developer &amp; Robotics Enthusiast. I build digital products that are fast, clean, and accessible.
+              Full-Stack Web Developer, Cyber Security Enthusiast &amp; Robotics Enthusiast. I build digital products that are fast, clean, and accessible.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#Project" className="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">
